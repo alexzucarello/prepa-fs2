@@ -1,22 +1,43 @@
-# PREPA FS2 — application de révision
+# PREPA FS2 — révision en ligne (GitHub Pages)
 
-Application indépendante, accessible depuis un navigateur sur téléphone ou ordinateur. Sans mot de passe, sans compte, sans Abacus ni API payante.
+**Site public :** https://alexzucarello.github.io/prepa-fs2/
 
-**Lien du site après activation de GitHub Pages :** https://alexzucarello.github.io/prepa-fs2/
+Application indépendante (ni JARVIS, ni Abacus), conçue pour téléphone et ordinateur, sans API payante. Elle est hébergée dans le dépôt GitHub d'origine.
 
-## Fonctionnalités
+## Accès direct
 
-- Catalogue pédagogique de 148 appellations provenant du catalogue public Identif' Game, avec 5 compléments non officiels clairement séparés.
-- QCM d'identification avec 14 photographies candidates issues de pages Wikimedia Commons ; leur adéquation aux variantes du FS2 doit être vérifiée.
-- Ajout et import de questions personnelles, révisions, progression et sauvegarde locale JSON.
-- Interface française et adaptée au mobile.
+- [Accueil et IDENTIF photographique](./index.html)
+- [Tableau IDENTIF FS2 et catalogue complémentaire](./identif-fs2.html)
+- [QCM général, VBL et PAD](./qcm.html)
 
-**Limites :** il ne s'agit pas de la banque intégrale du FS2, ni de la banque originale de l'application Abacus. Les références publiques sont des supports pédagogiques et non une liste officielle d'examen. Les photos externes requièrent Internet. Les données de progression restent sur chaque navigateur : exporter régulièrement la sauvegarde.
+## Banques et catalogues effectivement intégrés
 
-**Attention :** GitHub Pages est public. Ne pas verser de documents militaires ou photographies dont la diffusion n'est pas autorisée.
+| Module | Contenu |
+|---|---|
+| QCM général | 200 questions tirées de la banque déjà présente dans le dépôt. Les réponses incertaines ne doivent pas être notées comme corrigées. |
+| QCM VBL | 111 questions déjà présentes dans le dépôt. |
+| Cartes PAD | 126 cartes déjà présentes dans le dépôt. |
+| IDENTIF photographique | 14 photographies de référence publiques (candidatures à vérifier selon la variante), issues de pages Wikimedia Commons. |
+| Tableau FS2 | 125 appellations transcrites sur les **132** annoncées sur la photo fournie ; sept entrées supplémentaires de la colonne VBCI ne sont pas visibles. |
+| Catalogue Identif’ Game | 147 appellations conservées dans le dépôt existant, plus cinq compléments séparés. Ce catalogue public n'est pas la grille officielle du FS2. |
 
-## Publication
+Le fichier [catalogue-fs2.json](./catalogue-fs2.json) conserve les neuf catégories de la photo, les graphies telles que transcrites, les sept entrées manquantes et les points de contrôle. Les variantes ne sont pas automatiquement fusionnées. Des noms non lisibles ne sont jamais inventés.
 
-GitHub → **Settings → Pages → Build and deployment → Source: GitHub Actions**. Le workflow `.github/workflows/pages.yml` déploie automatiquement le contenu public de la branche `main` à chaque modification.
+Les 125 appellations ne disposent **pas chacune d'une photographie validée** ; le QCM visuel en ligne se limite aux 14 photos candidates clairement signalées. Les images externes ont besoin d'Internet. Les sources et licences restent consultables depuis le QCM.
 
-PREPA FS2 est un projet d'étude distinct, sans intégration JARVIS.
+## MMP — uniquement en local
+
+Le mémento fourni porte le marquage **« DIFFUSION RESTREINTE »**. Son contenu et les 134 questions qui en sont issues **ne sont pas versés dans ce dépôt public, ni sur GitHub Pages**. Le QCM MMP hors ligne reste dans les fichiers privés remis dans la conversation ; il n'est pas disponible sur ce site. Ne l'ajoutez pas au dépôt sans autorisation formelle de diffusion et contrôle approprié du moyen de stockage.
+
+## Confidentialité et limites
+
+- Ce dépôt et GitHub Pages sont **publics** : aucun mot de passe. « noindex » ne protège pas l'accès.
+- Vos scores/progrès sur ce site sont enregistrés dans le navigateur local (pas de synchronisation entre appareils). Exportez régulièrement votre sauvegarde quand le module le permet.
+- Les documents militaires, images internes et QCM provenant de supports à diffusion restreinte ne doivent pas être mis en ligne ici.
+- Le contenu public est pédagogique : il ne prétend pas reconstituer une banque originale cachée ou tous les supports de votre formation.
+
+## Déploiement
+
+Le workflow [pages.yml](./.github/workflows/pages.yml) publie **seulement les fichiers du site public** à chaque modification de `main`. Activer GitHub Pages dans **Settings → Pages → Build and deployment → Source: GitHub Actions** si nécessaire.
+
+Projet d'études indépendant de JARVIS.
