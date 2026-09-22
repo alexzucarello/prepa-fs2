@@ -7,7 +7,7 @@ Application indépendante (ni JARVIS, ni Abacus), conçue pour téléphone et or
 ## Accès direct
 
 - [Accueil et IDENTIF photographique](./index.html)
-- [Tableau IDENTIF FS2 et catalogue complémentaire](./identif-fs2.html)
+- [IDENTIF FS2 complet : 125 entrées, galerie et QCM photographique](./identif-fs2.html)
 - [QCM général, VBL et PAD](./qcm.html)
 
 ## Banques et catalogues effectivement intégrés
@@ -17,13 +17,13 @@ Application indépendante (ni JARVIS, ni Abacus), conçue pour téléphone et or
 | QCM général | 200 questions tirées de la banque déjà présente dans le dépôt. Les réponses incertaines ne doivent pas être notées comme corrigées. |
 | QCM VBL | 111 questions déjà présentes dans le dépôt. |
 | Cartes PAD | 126 cartes déjà présentes dans le dépôt. |
-| IDENTIF photographique | 14 photographies de référence publiques (candidatures à vérifier selon la variante), issues de pages Wikimedia Commons. |
+| IDENTIF photographique | 125 entrées lisibles du tableau FS2 mises à disposition dans le QCM et la galerie ; 14 photographies candidates préexistantes, recherche d'images complémentaires via Wikimedia Commons à la demande, ajout de photos personnelles seulement dans le navigateur. Une entrée n'est pas une image vérifiée. |
 | Tableau FS2 | 125 appellations transcrites sur les **132** annoncées sur la photo fournie ; sept entrées supplémentaires de la colonne VBCI ne sont pas visibles. |
 | Catalogue Identif’ Game | 147 appellations conservées dans le dépôt existant, plus cinq compléments séparés. Ce catalogue public n'est pas la grille officielle du FS2. |
 
 Le fichier [catalogue-fs2.json](./catalogue-fs2.json) conserve les neuf catégories de la photo, les graphies telles que transcrites, les sept entrées manquantes et les points de contrôle. Les variantes ne sont pas automatiquement fusionnées. Des noms non lisibles ne sont jamais inventés.
 
-Les 125 appellations ne disposent **pas chacune d'une photographie validée** ; le QCM visuel en ligne se limite aux 14 photos candidates clairement signalées. Les images externes ont besoin d'Internet. Les sources et licences restent consultables depuis le QCM.
+Les 125 appellations sont maintenant parcourables dans le QCM et la galerie. Le site recherche des photographies candidates complémentaires sur Wikimedia Commons : toutes ne sont pas nécessairement disponibles ou correctement attribuées à une variante. Les entrées sans photo sont ignorées dans le score. Les 14 références préexistantes ne sont pas une validation officielle. Les utilisateurs peuvent importer leur propre photo localement dans IndexedDB sans la publier. Les photographies et métadonnées externes nécessitent Internet ; vérifier les variantes et les licences depuis la source.
 
 ## MMP — uniquement en local
 
@@ -32,7 +32,7 @@ Le mémento fourni porte le marquage **« DIFFUSION RESTREINTE »**. Son contenu
 ## Confidentialité et limites
 
 - Ce dépôt et GitHub Pages sont **publics** : aucun mot de passe. « noindex » ne protège pas l'accès.
-- Vos scores/progrès sur ce site sont enregistrés dans le navigateur local (pas de synchronisation entre appareils). Exportez régulièrement votre sauvegarde quand le module le permet.
+- Vos scores/progrès sur ce site sont enregistrés dans le navigateur local (pas de synchronisation entre appareils). Exportez régulièrement votre sauvegarde quand le module le permet. Les photos importées depuis IDENTIF restent sur l'appareil dans IndexedDB, mais peuvent disparaître si vous effacez les données du navigateur.
 - Les documents militaires, images internes et QCM provenant de supports à diffusion restreinte ne doivent pas être mis en ligne ici.
 - Le contenu public est pédagogique : il ne prétend pas reconstituer une banque originale cachée ou tous les supports de votre formation.
 
